@@ -1,0 +1,15 @@
+@import '../../styles/breakpoints';
+@import '../../styles/variables';
+
+
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    &__title {
+        font-size: 3em;
+    }
+}
