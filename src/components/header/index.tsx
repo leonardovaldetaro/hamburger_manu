@@ -1,5 +1,6 @@
 import Styles from './Header.module.scss';
 import { ReactComponent as Logo } from 'assets/simbol_lv_branco.svg';
+import classNames from 'classnames';
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -21,13 +22,12 @@ const rotasNav = [{
   to: '/contact'
 }]
 
-const Menu = () => {
-  const [isMenuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-}
+const [isMenuOpen, setMenuOpen] = useState(false);
+
+const toggleMenu = () => {
+  setMenuOpen(!isMenuOpen);
+};
 
   return (
     <header className={Styles.header}>
@@ -40,34 +40,38 @@ const Menu = () => {
           ))}
       </div>
 
-      <div className={Styles.header__menu}>
+      <div className={Styles.header__menu} onClick={toggleMenu}>
         <div className={Styles.header__menu__bar}></div>
         <div className={Styles.header__menu__bar}></div>
         <div className={Styles.header__menu__bar}></div>
       </div>
 
       <nav 
-        className={Styles.header__nav}
-        id="nav"
+        className={classNames({
+          [Styles.header__nav]: !false, 
+          [Styles['header__nav--open']]: isMenuOpen
+        })}
       >
 
         <h5 className={Styles.header__nav__title}>Menu</h5>
             
-        <ul className={Styles.hedaer__nav__list}>
+        <ul className={Styles.header__nav__list}>
           {rotasNav.map((rota, index) =>(
-            <li className={Styles.header__nav__list__item} key={index}>
+            <li className={Styles.header__nav__list__item} 
+            key={index}>
               <NavLink 
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : "" 
-              }
-              to={rota.to}
+              className={classNames({
+                [Styles.header__nav__list__item__link]: !false, 
+                [Styles['header__nav__list__item__link--ativo']]: isMenuOpen
+              })}
+                to={rota.to}
               >
                 {rota.label}
               </NavLink>
             </li>
           ))}
         </ul>
-
+        <span className={Styles.copyright}>LeonardoValdetaro © Copyright 2024</span>
       </nav>
 
     </header>
