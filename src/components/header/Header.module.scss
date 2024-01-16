@@ -1,9 +1,12 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: $dark;
+  color: $wite;
   padding: 1em 2em;
   position: fixed;
   width: 100%;
@@ -33,16 +36,25 @@
     }
 
     &__bar {
-       background-color: white;
+      background-color: $wite;
       height: 3px;
       transition: transform 0.3s ease;
       border-radius: 3px;
+      &__barTop {
+        transform: translatey(7px) rotate(-45deg);
+      }
+      &__barMidle {
+        display: none;
+      }
+      &__barBotton {
+        transform: translatey(-8px) rotate(45deg);
+      }
     }
   }
 
   &__nav {
     align-items: center;
-    background-color: #333;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,7 +74,7 @@
     }
 
     &__title {
-      color: #8b8b8b;
+      color: $dark-grey;
       font-weight: 300;
       font-size: 1em;
       letter-spacing: .4em;
@@ -79,8 +91,7 @@
         padding-bottom: 1em;
 
         &__link {
-          border-bottom: 1px solid #333;
-          color: #333;
+          color: $dark;
           font-weight: 700;
           font-size: 2em;
           padding: 15px;
@@ -89,10 +100,10 @@
           width: 100%;
     
           &:hover {
-            color: #555;
+            color: $dark-grey;
           }
           &--ativo {
-            color: #fff;
+            color: $wite;
           }
         }
       }
@@ -102,7 +113,7 @@
 
 }
 .copyright {
-  color: #8b8b8b;
+  color: $dark-grey;
   font-size: .7em;
   margin-top: 5em;
 }

@@ -41,9 +41,23 @@ const toggleMenu = () => {
       </div>
 
       <div className={Styles.header__menu} onClick={toggleMenu}>
-        <div className={Styles.header__menu__bar}></div>
-        <div className={Styles.header__menu__bar}></div>
-        <div className={Styles.header__menu__bar}></div>
+
+        <div className={classNames({
+          [Styles.header__menu__bar]: !false, 
+          [Styles.header__menu__bar__barTop]: isMenuOpen
+        })}>
+        </div>
+
+        <div className={classNames({
+          [Styles.header__menu__bar]: !false, 
+          [Styles.header__menu__bar__barMidle]: isMenuOpen
+        })}></div>
+
+        <div className={classNames({
+          [Styles.header__menu__bar]: !false, 
+          [Styles.header__menu__bar__barBotton]: isMenuOpen
+        })}></div>
+
       </div>
 
       <nav 
