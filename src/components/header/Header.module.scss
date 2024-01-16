@@ -41,13 +41,13 @@
       transition: transform 0.3s ease;
       border-radius: 3px;
       &__barTop {
-        transform: translatey(7px) rotate(-45deg);
+        transform: scale(0.7) translatey(9px) rotate(-45deg);
       }
       &__barMidle {
         display: none;
       }
       &__barBotton {
-        transform: translatey(-8px) rotate(45deg);
+        transform: scale(0.7) translatey(-13px) rotate(45deg);
       }
     }
   }
