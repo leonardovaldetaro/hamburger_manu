@@ -78,6 +78,7 @@ const toggleMenu = () => {
                 [Styles.header__nav__list__item__link]: !false, 
                 [Styles['header__nav__list__item__link--ativo']]: isMenuOpen
               })}
+                onClick={toggleMenu}
                 to={rota.to}
               >
                 {rota.label}

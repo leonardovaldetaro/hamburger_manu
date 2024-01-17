@@ -1,5 +1,7 @@
 import Header from 'components/header';
-import Main from 'components/main';
+import About from 'pages/about';
+import Contact from 'pages/contact';
+import Home from 'pages/home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -8,7 +10,11 @@ export default function AppRouter () {
         <main className='container'>
             <Router>
                 <Header />
-                <Main />
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path='about' element={<About />} />
+                    <Route path='contact' element={<Contact />} />
+                </Routes>
             </Router>
         </main>
     );
