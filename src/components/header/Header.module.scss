@@ -14,14 +14,19 @@
   z-index: 1000;
   transition: background-color 0.3s ease;
 
-  &__img {
-    height: 3em;
+  &__logo {
+    width: 3em;
     transition: all .5s;
     &:hover {
       transform: scale(1.1);
     }
   }
-  
+
+  &__menuContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
   &__menu {
     display: flex;
     width: 28px;
@@ -33,6 +38,25 @@
 
     &:hover {
       transform: scaley(1.2);
+    }
+
+    &__nameMenu {
+      align-self: center;
+      font-size: .7em;
+      font-weight: 300;
+      margin-right: 1em;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+    }
+
+    &__nameClose {
+      align-self: center;
+      font-size: .7em;
+      font-weight: 300;
+      margin-right: 1em;
+      display: none;
+      letter-spacing: .3em;
+      text-transform: uppercase;
     }
 
     &__bar {
@@ -116,4 +140,11 @@
   color: $dark-grey;
   font-size: .7em;
   margin-top: 5em;
+}
+
+.hiden {
+  display: none;
+}
+.show {
+  display: block;
 }
