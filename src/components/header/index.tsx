@@ -11,6 +11,11 @@ const rotaLogo = [{
   to: '/'
 }];
 
+const headerName = [{
+  label: <span className={Styles.header__name}>Leonardo Valdetaro</span>,
+  to: '/'
+}];
+
 const rotasNav = [{
   label: 'Projects',
   to: '/'
@@ -39,7 +44,14 @@ const toggleMenu = () => {
               </figure>
           ))}
       </div>
-
+      
+      <div className={Styles.header__title}>
+        {headerName.map((rota, index) => (
+          <div key={index}>
+            <Link to={rota.to}>{rota.label}</Link>
+          </div>
+        ))}
+      </div>
 
       <div className={Styles.header__menuContainer}>
 

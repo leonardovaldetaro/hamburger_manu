@@ -7,7 +7,7 @@
   align-items: center;
   background-color: $dark;
   color: $wite;
-  padding: 1em 2em;
+  padding: 1em 1em;
   position: fixed;
   width: 100%;
   top: 0;
@@ -22,9 +22,17 @@
     }
   }
 
+  &__name {
+    color: $light-grey;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
   &__menuContainer {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    width: 33%;
   }
 
   &__menu {
