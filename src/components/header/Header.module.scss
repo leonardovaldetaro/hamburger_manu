@@ -7,12 +7,15 @@
   align-items: center;
   background-color: $dark;
   color: $wite;
-  padding: 1em 1em;
+  padding: 1em 2em;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease;
+  @media (max-width: $desktop_xsm) {
+    padding: 1em 1em;
+  }
 
   &__logo {
     width: 3em;
@@ -24,8 +27,25 @@
 
   &__name {
     color: $light-grey;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 700;
+    @media (max-width: $desktop_md) {
+			font-size: 1.3em;
+		}
+    
+  }
+
+  &__title {
+    width: 60%;
+    @media (max-width: $desktop_md) {
+			width: 45%;
+		}
+    a {
+      transition: all .5s;
+      &:hover {
+        opacity: .6;
+      }
+    }
   }
 
   &__menuContainer {
@@ -45,7 +65,7 @@
     transition: transform 0.2s ease;
 
     &:hover {
-      transform: scaley(1.2);
+      transform: scaley(1.3);
     }
 
     &__nameMenu {

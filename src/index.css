@@ -14,26 +14,3 @@ body {
   color: var(--dark);
   margin: 0;
 }
-
-#root > main.container {
-  margin: 0 auto;
-  display: grid;
-	grid-template-areas: 
-		"header"
-		"main"
-		"footer";
-	grid-template-columns: 100%;
-	grid-template-rows: auto auto auto;
-	grid-row-gap: 0;
-}
-
-.header {
-	grid-area: header;
-}
-.main {
-	grid-area: main;
-}
-
-.footer {
-	grid-area: footer;
-}
