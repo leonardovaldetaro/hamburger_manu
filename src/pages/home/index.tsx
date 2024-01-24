@@ -1,8 +1,10 @@
+import Slide from 'components/slide';
 import Styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
 
 export default function Home () {
     return (
+        <>
         <section className={Styles.main}>
             <h2 className={Styles.main__name}>
                 Leonardo Valdetaro
@@ -23,5 +25,9 @@ export default function Home () {
                 </Link>
             </div>
         </section>
+        <section>
+            <Slide />
+        </section>
+        </>
     );
 }
