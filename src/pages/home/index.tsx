@@ -1,6 +1,7 @@
 import Slide from 'components/slide';
 import Styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
+import Cards from 'components/cards';
 
 export default function Home () {
     return (
@@ -25,7 +26,9 @@ export default function Home () {
                 </Link>
             </div>
         </section>
-        <section>
+        <section className={Styles.slide}>
+            <h3 className={Styles.slide__subtitle}>selected projects</h3>
+            <h2 className={Styles.slide__title}>Case Studies</h2>
             <Slide />
         </section>
         </>

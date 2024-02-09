@@ -4,14 +4,12 @@
 
 
 .main {
-    background-image: url("../../assets/fundo-topo-main-b.jpg");
-    background-position: center;
-    background-size: cover;
+    
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 8em 1em 0 1em;
     width: 100%;
+    margin-bottom: 4em;
     &__name {
         color: $dark-grey;
         font-size: 1.2em;
@@ -75,5 +73,23 @@
                 transition-timing-function: ease-out;
             }
         }
+    }
+}
+
+.slide {
+    height: 14em;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    &__title {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+    &__subtitle {
+        color: $dark-grey;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
     }
 }

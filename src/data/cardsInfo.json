@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Basic UI - Teste 1",
+        "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+        "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+        "photo": "assets/img.jpg",
+        "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+        "id": 1,
+        "direct": "View Case Study",
+        "category": {
+          "id": 1,
+          "label": "Japiassu eventos"
+        }
+    },
+    {
+      "title": "Basic UI - Teste 2",
+      "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+      "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+      "photo": "assets/img_green.jpg",
+      "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+      "id": 2,
+      "direct": "View Case Study",
+      "category": {
+        "id": 2,
+        "label": "Japiassu eventos"
+      }
+  },
+  {
+    "title": "Basic UI - Teste 3",
+    "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+    "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+    "photo": "assets/img_red.jpg",
+    "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+    "id": 2,
+    "direct": "View Case Study",
+    "category": {
+      "id": 2,
+      "label": "Japiassu eventos"
+    }
+},
+{
+  "title": "Basic UI - Teste 3",
+  "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+  "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+  "photo": "assets/img_red.jpg",
+  "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+  "id": 2,
+  "direct": "View Case Study",
+  "category": {
+    "id": 2,
+    "label": "Japiassu eventos"
+  }
+}
+]

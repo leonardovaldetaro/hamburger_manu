@@ -1,0 +1,30 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.card {
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1/sapan 4;
+    grid-row: 1;
+    &__imgContainer {
+        overflow: hidden;
+        grid-column: 1/sapan 4;
+        grid-row: 1;
+        &__img {
+            width: 100%;
+        	object-fit: cover;
+        }
+    }
+    &__infoContainer {
+        padding: 2em;
+        transform: translate3d(0, 0, 0);
+        grid-row: 1;
+        grid-column: 1 / span 4;
+        &__title {
+            color: $light-grey;
+            font-size: 2em;
+        }
+    }
+}
