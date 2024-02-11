@@ -6,7 +6,7 @@ export default function () {
     return (
         <section className={Styles.cards}>
             {CardsInfo.map(item => (
-                <Card 
+                <Card
                     key={item.id}
                     {...item}
                 />

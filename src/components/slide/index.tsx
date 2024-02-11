@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -12,27 +11,29 @@ import 'swiper/scss/pagination';
 
 import '../slide/Slide.css';
 
-import CardsInfo from 'data/cardsInfo.json'
+import CardsInfo from 'data/cardsInfo.json';
+import Card from 'components/cards/card';
 
 
 export default function Slide () {
-    
+
     return (
         <>
             <Swiper 
                 className={'mySwiper'}
                 modules={[Navigation, Pagination, A11y]} 
-                slidesPerView={1}
-                spaceBetween={16}
+                slidesPerView={'auto'}
+                spaceBetween={15}
                 navigation={true} 
                 loop={true}
                 pagination={{ clickable: true }}
             >
-                {CardsInfo.map((Card) => (
-                    <SwiperSlide key={Card.title}>
-                        
+                {CardsInfo.map(item => (
+                    <SwiperSlide key={item.id}>
+                        <Card {...item} />
                     </SwiperSlide>
                 ))}
+                
                 
             </Swiper>
         </>

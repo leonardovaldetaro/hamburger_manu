@@ -1,7 +1,6 @@
 import Slide from 'components/slide';
 import Styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
-import Cards from 'components/cards';
 
 export default function Home () {
     return (

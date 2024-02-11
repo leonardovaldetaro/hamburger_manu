@@ -5,7 +5,7 @@ import cardInfo from 'data/cardsInfo.json';
 type Props = typeof cardInfo[0];
 
 export default function Card (props: Props) {
-    const  {title, category, direct, photo, alt, longDescription}= props;
+    const  {title, photo, alt}= props;
 
     return (
         <article className={Styles.card}>
