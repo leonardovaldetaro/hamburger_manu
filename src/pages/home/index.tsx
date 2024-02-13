@@ -1,6 +1,7 @@
 import Slide from 'components/slide';
 import Styles from './Home.module.scss';
 import { Link } from 'react-router-dom';
+import CallToWork from './callToWork';
 
 export default function Home () {
     return (
@@ -30,6 +31,7 @@ export default function Home () {
             <h2 className={Styles.slide__title}>Case Studies</h2>
             <Slide />
         </section>
+        <CallToWork />
         </>
     );
 }

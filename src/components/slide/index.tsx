@@ -26,15 +26,25 @@ export default function Slide () {
                 spaceBetween={15}
                 navigation={true} 
                 loop={true}
+                breakpoints={{
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    1080: {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                    },
+                  }}
                 pagination={{ clickable: true }}
             >
+                
                 {CardsInfo.map(item => (
                     <SwiperSlide key={item.id}>
                         <Card {...item} />
                     </SwiperSlide>
                 ))}
-                
-                
+
             </Swiper>
         </>
     );

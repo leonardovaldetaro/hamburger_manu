@@ -1,3 +1,4 @@
+import Footer from 'components/footer';
 import Header from 'components/header';
 import About from 'pages/about';
 import Contact from 'pages/contact';
@@ -15,6 +16,7 @@ export default function AppRouter () {
                     <Route path='about' element={<About />} />
                     <Route path='contact' element={<Contact />} />
                 </Routes>
+                <Footer />
             </Router>
         </main>
     );

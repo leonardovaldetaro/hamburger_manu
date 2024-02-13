@@ -2,12 +2,17 @@
 @import "styles/_breakpoints.scss";
 
 .card {
-    overflow: hidden;
-    width: 100%;
+    box-shadow: 4px 4px 9px rgba(32, 50, 62, 45%);
+    border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-column: 1/sapan 4;
     grid-row: 1;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    width: 100%;
+    @media (min-width: $desktop_md) {
+        width: 80%;
+    }
     &__imgContainer {
         overflow: hidden;
         grid-column: 1/sapan 4;

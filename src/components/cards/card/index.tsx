@@ -1,7 +1,6 @@
 import Styles from './Card.module.scss';
 import cardInfo from 'data/cardsInfo.json';
 
-
 type Props = typeof cardInfo[0];
 
 export default function Card (props: Props) {

@@ -14,3 +14,8 @@ body {
   color: var(--dark);
   margin: 0;
 }
+
+.active {
+	border-bottom: 2px solid;
+  color: rgba(228, 228, 228, .4) !important;
+}

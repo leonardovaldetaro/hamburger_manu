@@ -1,6 +1,6 @@
 [
     {
-        "title": "Basic UI - Teste 1",
+        "title": "Front-end",
         "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
         "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
         "photo": "assets/img.jpg",
@@ -13,7 +13,7 @@
         }
     },
     {
-      "title": "Basic UI - Teste 2",
+      "title": "Basic UI",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
       "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
       "photo": "assets/img_green.jpg",
@@ -26,7 +26,7 @@
       }
   },
   {
-    "title": "Basic UI - Teste 3",
+    "title": "VIP",
     "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
     "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
     "photo": "assets/img_red.jpg",
@@ -39,7 +39,7 @@
     }
 },
 {
-  "title": "Basic UI - Teste 4",
+  "title": "Basic UX",
   "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
   "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
   "photo": "assets/img_green.jpg",

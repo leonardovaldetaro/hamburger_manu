@@ -27,6 +27,7 @@ const rotasNav = [{
   to: '/contact'
 }]
 
+const [isActive, setActive] = useState(false);
 
 const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -91,7 +92,6 @@ const toggleMenu = () => {
           [Styles['header__nav--open']]: isMenuOpen
         })}
       >
-
         <h5 className={Styles.header__nav__title}>Menu</h5>
             
         <ul className={Styles.header__nav__list}>
@@ -101,7 +101,8 @@ const toggleMenu = () => {
               <NavLink 
               className={classNames({
                 [Styles.header__nav__list__item__link]: !false, 
-                [Styles['header__nav__list__item__link--ativo']]: isMenuOpen
+                [Styles['header__nav__list__item__link--ativo']]: isMenuOpen,
+                [Styles.active]: isActive
               })}
                 onClick={toggleMenu}
                 to={rota.to}

@@ -4,12 +4,15 @@
 
 
 .main {
-    
     display: flex;
     flex-direction: column;
-    padding: 8em 1em 0 1em;
-    width: 100%;
-    margin-bottom: 4em;
+    padding: 8em 2em 0 2em;
+    width: 45%;
+    margin-bottom: 5em;
+    @media (max-width: $desktop_xsm) {
+        padding: 8em 1em 0 1em;
+        width: 100%;
+    }
     &__name {
         color: $dark-grey;
         font-size: 1.2em;
@@ -25,6 +28,10 @@
         color: $dark;
         margin-bottom: .75em;
         line-height: 2.5rem;
+        @media (min-width: $desktop_md) {
+            font-size: 3.2rem;
+            line-height: 3.5rem;
+        }
     }
     &__text {
         font-size: 1.4em;
@@ -32,6 +39,10 @@
         color: $dark-grey;
         margin-bottom: .75em;
         line-height: 1.7rem;
+        @media (min-width: $desktop_md) {
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+        }
     }
     &__botaoWraper {
         display: flex;
@@ -79,6 +90,9 @@
 .slide {
     padding: 0 1em;
     margin-bottom: 1em;
+    @media (min-width: $desktop_md) {
+        padding: 0 2em;
+    }
     &__subtitle {
         color: $dark-grey;
         font-size: 1em;
