@@ -2,34 +2,44 @@
 @import "styles/_breakpoints.scss";
 
 .card {
-    box-shadow: 4px 4px 9px rgba(32, 50, 62, 45%);
-    border-radius: 10px;
     display: grid;
     grid-column: 1/sapan 4;
     grid-row: 1;
     grid-template-columns: repeat(4, 1fr);
     overflow: hidden;
     width: 100%;
+    cursor: pointer;
     @media (min-width: $desktop_md) {
-        width: 80%;
+        width: 100%;
     }
     &__imgContainer {
         overflow: hidden;
         grid-column: 1/sapan 4;
         grid-row: 1;
+        border: 1px solid rgba(black,.2);
         &__img {
-            width: 100%;
         	object-fit: cover;
+            transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                mix-blend-mode: multiply;
+            }
+            width: 100%;
         }
     }
     &__infoContainer {
-        padding: 2em;
+        padding: .5em;
         transform: translate3d(0, 0, 0);
-        grid-row: 1;
+        grid-row: 2;
         grid-column: 1 / span 4;
         &__title {
-            color: $light-grey;
-            font-size: 2em;
+            color: $dark;
+            font-size: 1em;
+        }
+        &__subtitle {
+            font-size: 0.8em;
+            color: $dark-grey;
+            font-weight: 400;
         }
     }
 }
