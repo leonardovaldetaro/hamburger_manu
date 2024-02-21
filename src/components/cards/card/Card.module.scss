@@ -22,7 +22,6 @@
             transition: transform .5s ease-in-out,-webkit-transform .5s ease-in-out;
             &:hover {
                 transform: scale(1.1);
-                mix-blend-mode: multiply;
             }
             width: 100%;
         }
@@ -34,12 +33,12 @@
         grid-column: 1 / span 4;
         &__title {
             color: $dark;
-            font-size: 1em;
+            font-size: 1.2em;
         }
         &__subtitle {
-            font-size: 0.8em;
+            font-size: .9em;
             color: $dark-grey;
-            font-weight: 400;
+            font-weight: 700;
         }
     }
 }
