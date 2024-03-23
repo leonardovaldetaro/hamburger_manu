@@ -4,44 +4,67 @@
 
 
 .main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    height: 100%;
+    grid-row-gap: 0;
+    grid-template-columns: repeat(12, 1fr);
     padding: 8em 2em 0 2em;
-    width: 45%;
+    align-content: start;
     margin-bottom: 5em;
     @media (max-width: $desktop_xsm) {
+        grid-template-columns: repeat(8, 1fr);
         padding: 8em 1em 0 1em;
         width: 100%;
     }
-    &__name {
-        color: $dark-grey;
-        font-size: 1.2em;
-        font-weight: 500;
-        letter-spacing: 0.1em;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-    }
-    &__title {
-        font-size: 2.2rem;
-        transform: translate3d(0, 0, 0);
-        font-weight: 700;
-        color: $dark;
-        margin-bottom: .75em;
-        line-height: 2.5rem;
-        @media (min-width: $desktop_md) {
-            font-size: 3.2rem;
-            line-height: 3.5rem;
+    &__img {
+        width: 75%;
+        grid-column: 10 / span 4;
+        grid-row: 1;
+        @media (max-width: $desktop_xsm) {
+            grid-column: 2 / span 8;
+            grid-row: 1;
+            margin-bottom: 2em;
         }
     }
-    &__text {
-        font-size: 1.4em;
-        font-weight: 500;
-        color: $dark-grey;
-        margin-bottom: .75em;
-        line-height: 1.7rem;
-        @media (min-width: $desktop_md) {
-            font-size: 1.5rem;
-            line-height: 1.9rem;
+    &__infoContainer {
+        grid-column: 1 / span 6;
+        grid-row: 1;
+        margin-top: 5em;
+        transform: translate3d(0, 0, 0);
+        @media (max-width: $desktop_xsm) {
+            grid-column: 1 / span 8;
+            grid-row: 2;
+            margin-top: 0;
+        }
+        &__name {
+            color: $dark-grey;
+            font-size: 1.2em;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+        &__title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: $dark;
+            margin-bottom: .75em;
+            line-height: 2.5rem;
+            @media (min-width: $desktop_md) {
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+            }
+        }
+        &__text {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: $dark-grey;
+            margin-bottom: .75em;
+            line-height: 1.7rem;
+            @media (min-width: $desktop_md) {
+                font-size: 1.5rem;
+                line-height: 1.9rem;
+            }
         }
     }
     &__botaoWraper {
@@ -52,7 +75,6 @@
             transition: all .5s;
             font-weight: 700;
             font-size: 1.2em;
-            transition: all .4s;
             position: relative;
             @media (max-width: $desktop_xsm) {
                 margin-bottom: 0;
