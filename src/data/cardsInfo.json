@@ -1,24 +1,30 @@
 [
     {
-        "title": "Front-end",
+        "title": "Rafael Porto Fotografia que Valoriza",
         "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
         "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
-        "photo": "assets/rafaelPorto_430.jpg",
+        "paragraph_1": "With over 20 years of experience, PMR serves more than 500 global clients offering their market research and expert analysis products. I was asked to re-create their platform from scratch, and improve the visual appeal of their website and all their products, while making them informative and easy to use, in order to reflect their vision and leading position on the market.",
+        "paragraph_2": "Alongside Krzysztof Rusnarczyk, who was responsible for the front-end development, I worked as PMR’s long-term creative partner and UX / UI / Web design specialist over the course of almost two years. ",
+        "paragraph_3": "I established a new visual language, an extensive library of user interface elements, and designed over 40 individual pages, working closely with the client, through a collaborative review process. The main goal was to improve the user experience to make it fresh, intuitive and accessible across all platforms, which elevated the company’s online presence and their products.",
+        "photo": "/assets/rafaelPorto_430.jpg",
+        "photo_1": "/assets/rafaelPorto_430.jpg",
+        "photo_2": "/assets/rafaelPorto_430.jpg",
+        "photo_3": "/assets/rafaelPorto_430.jpg",
         "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
-        "id": 1,
-        "direct": "View Case Study",
-        "category": {
-          "id": 1,
-          "label": "Japiassu eventos"
-        }
+        "id": "rafaelPorto",
+        "role_1":  "Front-end",
+        "role_2":  "Responsive Design",
+        "role_3":  "UI",
+        "client": "Rafael Porto",
+        "data": "2013"
     },
     {
       "title": "Basic UI",
       "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
       "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
-      "photo": "assets/japiassu_430.jpg",
+      "photo": "/assets/japiassu_430.jpg",
       "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
-      "id": 2,
+      "id": "japiassu",
       "direct": "View Case Study",
       "category": {
         "id": 2,
@@ -29,9 +35,9 @@
     "title": "VIP",
     "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
     "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
-    "photo": "assets/provisorio.jpg",
+    "photo": "/assets/provisorio.jpg",
     "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
-    "id": 3,
+    "id": "provisorio1",
     "direct": "View Case Study",
     "category": {
       "id": 3,
@@ -41,14 +47,37 @@
 {
   "title": "Basic UX",
   "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
-  "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
-  "photo": "assets/provisorio2.jpg",
+  "longDescription": [
+    "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est.\n",
+    
+    "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin."
+  ],
+  "photo": "/assets/provisorio2.jpg",
   "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
-  "id": 4,
+  "id": "provisorio2",
   "direct": "View Case Study",
   "category": {
     "id": 4,
     "label": "Japiassu eventos"
   }
+},
+{
+  "title": "Rafael Porto Fotografia que Valoriza",
+  "description": "Lorem ipsum dolor sit amet, consect adipiscing elit dolor sit.",
+  "longDescription": "Curabitur ut semper justo, sit amet finibus velit. Donec metus ipsum, congue non placerat nec, laoreet eu erat. Maecenas vel nisl porta, facilisis dolor et, egestas sem. Aliquam eget sem id massa maximus pharetra vel at ex. Curabitur et neque scelerisque, molestie mi ac, sodales est. Vivamus semper turpis ut ligula mollis sollicitudin.",
+  "paragraph_1": "With over 20 years of experience, PMR serves more than 500 global clients offering their market research and expert analysis products. I was asked to re-create their platform from scratch, and improve the visual appeal of their website and all their products, while making them informative and easy to use, in order to reflect their vision and leading position on the market.",
+  "paragraph_2": "Alongside Krzysztof Rusnarczyk, who was responsible for the front-end development, I worked as PMR’s long-term creative partner and UX / UI / Web design specialist over the course of almost two years. ",
+  "paragraph_3": "I established a new visual language, an extensive library of user interface elements, and designed over 40 individual pages, working closely with the client, through a collaborative review process. The main goal was to improve the user experience to make it fresh, intuitive and accessible across all platforms, which elevated the company’s online presence and their products.",
+  "photo": "/assets/card-global-opsi.jpg",
+  "photo_1": "/assets/rafaelPorto_430.jpg",
+  "photo_2": "/assets/rafaelPorto_430.jpg",
+  "photo_3": "/assets/rafaelPorto_430.jpg",
+  "alt": "Texto alternativo para as imagens do site Leonardo Valdetaro Front-end developer",
+  "id": "rafaelPorto",
+  "role_1":  "Front-end",
+  "role_2":  "Responsive Design",
+  "role_3":  "UI",
+  "client": "Rafael Porto",
+  "data": "2013"
 }
 ]

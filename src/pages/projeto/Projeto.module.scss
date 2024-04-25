@@ -1,0 +1,97 @@
+@import 'styles/variables';
+@import 'styles/breakpoints';
+
+.projeto {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 10em 0 2em;
+    padding: 0 2em;
+    grid-row-gap: 8em;
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: repeat(6, 1fr);
+        margin: 8em 0 2em;
+        grid-row-gap: 2em;
+        padding: 0 1em;
+    }
+}
+.containerDescriptions {
+    display: grid;
+    grid-column: 1 / span 4;
+    @media (max-width: $desktop_xsm) {
+        grid-column: 1 / span 6;
+    }
+    &__subTittles {
+        color: $dark-grey;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    &__caseStudy {
+        grid-row: 1;
+    }
+    &__tittle {
+        color: $dark;
+        font-size: 2.75rem;
+        grid-row: 2;
+        line-height: 3.125rem;
+        margin-bottom: 1em;
+        @media (max-width: $desktop_xsm) {
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: .8em;
+        }
+    }
+    &__myRoles {
+        grid-row: 3;
+    }
+    &__roles {
+        grid-row: 4;
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        margin-bottom: 1em;
+    }
+    &__clients {
+        grid-row: 5;
+    }
+    &__client {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        grid-row: 6;
+        margin-bottom: 1em;
+    }
+    &__dates {
+        grid-row: 7;
+    }
+    &__date {
+        font-size: 1.125rem;
+        line-height: 1.5625rem;
+        grid-row: 8;
+    }
+}
+
+.containerText {
+    display: grid;
+    grid-column: 6 / span 7;
+    padding-top: 2em;
+    @media (max-width: $desktop_xsm) {
+        grid-column: 1 / span 6;
+    }
+    &__text {
+        color: $dark-grey;
+        font-size: 1.375em;
+        line-height: 1.875rem;
+    }
+    &__firstParagraf {
+        grid-row: 1;
+    }
+    &__secondParagraf {
+        grid-row: 2;
+    }
+    &__tirdParagraf {
+        grid-row: 3;
+    }
+}
+
+.firstImage {
+    grid-column: 1 / span 12;
+}
